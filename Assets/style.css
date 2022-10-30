@@ -5,31 +5,71 @@
     --highlight: orange;
     --light: white;
 }
-
-* {
-    font-family: 'Times New Roman', Times, serif;
-}
 /* Overall Style */
 
 
 /* Header Style */
 header {
-    padding: 20px;
+    padding: 40px;
     background-color: var(--dark);
     color: var(--light);
 }
 
 .title {
     float: left;
-    color: var(--highlight)
+    color: var(--highlight);
+    height: 0px;
 }
 
 .navbar {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     float: right;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 10px;
 }
 /* Header Style */
 
+#about {
+    margin: 2%;
+    display: flex;
+    color: var(--light);
+    background-color: var(--dark);
+    border: 20px;
+}
+
+#about p {
+    margin: auto;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    color: var(--light);
+    background-color: var(--dark);
+    border: 20px;
+}
+
+{
+    background-color: var(--highlight);
+    text-align: center;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portfolio-card {
+    height: 200px;
+    width: 200px;
+    margin: 2%;
+    text-align: center;
+    color: var(--light);
+    background-color: var(--dark);
+}
 
 /* Footer Style */
 .footlist {
