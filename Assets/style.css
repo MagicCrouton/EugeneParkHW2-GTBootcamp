@@ -1,4 +1,39 @@
+
+/* Overall Style */
+:root {
+    --dark: darkslategrey;
+    --highlight: orange;
+    --light: white;
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Overall Style */
+
+
+/* Header Style */
+header {
+    padding: 20px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.title {
+    float: left;
+    color: var(--highlight)
+}
+
 .navbar {
     display: inline-flex;
     float: right;
 }
+/* Header Style */
+
+
+/* Footer Style */
+.footlist {
+    display: inline-flex;
+    float: right;
+}
+/* Footer Style */
