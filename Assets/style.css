@@ -9,16 +9,21 @@
 
 
 /* Header Style */
+
 header {
     padding: 40px;
     background-color: var(--dark);
-    color: var(--light);
+    color: var(--highlight);
+    /* background-image: url('./Assets/Banner.png'); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 20px; */
 }
 
 .title {
     float: left;
     color: var(--highlight);
-    height: 0px;
+    font-size: x-large;
 }
 
 .navbar {
@@ -52,28 +57,39 @@ header {
     border: 20px;
 }
 
-{
-    background-color: var(--highlight);
-    text-align: center;
-}
-
 #portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .portfolio-card {
-    height: 200px;
-    width: 200px;
-    margin: 2%;
+    min-height: 200px;
+    min-width: 200px;
+    margin: 1%;
+    border: 20pt;
+    border-color: var(--highlight);
     text-align: center;
     color: var(--light);
     background-color: var(--dark);
 }
 
 /* Footer Style */
+
+/* why can't i get the row to show up on the right? */
+footer {
+    padding: 2%;
+    background-color: var(--dark);
+    color: var(--highlight);
+
 .footlist {
-    display: inline-flex;
-    float: right;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark);
+    color: var(--light);
+    width: 100%;
+}
+
+.footlist li {
+    padding: 10px;
 }
 /* Footer Style */
