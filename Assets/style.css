@@ -6,27 +6,32 @@
     --highlight: orange;
     --light: white;
 }
+
+
 /* Overall Style */
 
 
 /* Header Styling */
 header {
-    padding: 80px;
+    margin-bottom: .5%;
+    padding: 50px;
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--dark);
     color: var(--highlight);
+    justify-content: space-between;
 }
 
 header h1 {
-    display: inline-block;
-    float: left;
+    /* display: inline-block; */
+    /* float: left; no longer necessary by justify content space between in parent*/
     font-size: 50px;
     margin: auto;
 }
 
-header nav {
+/* no longer necessary by using justify-content: space between in parent */
+/* header nav {
     float: right;
-}
+} */
 
 header nav ul {
     list-style-type: none;
@@ -36,43 +41,87 @@ header nav ul li {
     margin: auto;
     color: var(--light);
     padding: 10px;
-    display: inline-box;
     float: right;
 }
+
+/* makes sure the header stacks correctly below 700px */
+@media screen and (max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5%;
+        padding: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: var(--dark);
+        color: var(--highlight);
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: auto;
+    }
+}
+
+
 
 /* About Section styling */
 
 #about {
-    padding: 5%;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: .5%;
     background-color: var(--secondaryDark);
-    color: var(--light)
+    color: var(--light);
 }
 
 #about h2 {
-    float: left;
-    margin-right: 10%;
+    padding: 10px;
 }
 
-#about h2 p {
-    float: right;
-
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
 }
 
+#about ul li{
+    margin-left: 10px; 
+    margin-right: 10px;
+}
 
+/* makes sure the about me section displays in a centered collumn */
+@media screen and (max-width: 700px) {
+    
+    #about {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5%;
+        background-color: var(--secondaryDark);
+        color: var(--light);
+    }
+
+    #about h2 {
+        text-align: center;
+        padding: 10px;
+    }
+}
 /* Portfolio Styling */
 
 #portfolio {
+    display: flex;
     padding: 10%;
+    background-color: var(--dark);
     font-family: 'Times New Roman', Times, serif;
 }
 
 #portfolio h2 {
     margin: auto;
-    margin-right: 2%;
-    border: 5px;
-    min-height: 100px;
+    min-height: auto;
     min-width: 100px;
+    font-size: x-large;
     border-color: var(--highlight);
     background-color: var(--dark);
     color: var(--light);
@@ -84,29 +133,79 @@ header nav ul li {
     float: right;
     margin-left: 5%;
     list-style-type: none;
+    justify-content: space-evenly;
 }
 
 .portfolio-card {
     height: auto;
     width: auto;
-    min-height: 200px;
-    min-width: 200px;
-    margin: auto+2px;
+    min-height: 400px;
+    min-width: 400px;
+    margin-block-end:3%;
     padding: 20px;
     background-color: var(--secondaryDark);
 }
 
 .portfolio-card h3 {
-    justify-content: center;
+    text-align: center;
     color: var(--light);
     background-color: var(--dark);
 }
 
 .portfolio-card p {
-    justify-content: center;
+    text-align: center;
     margin: auto;
     color: var(--light);
 }
+
+/* Change Portfolio style when smaller than 700px */
+
+@media screen and (max-width: 700px) {
+
+    /* this breaks the minimum width requirements of
+    the cards and centers the entire portfolio section 
+    into a column */
+    
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        background-color: var(--dark);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    #portfolio h2 {
+        margin: .5%;
+        min-height: auto;
+        text-align: center;
+        min-width: auto;
+        font-size: x-large;
+        border-color: var(--highlight);
+        background-color: var(--dark);
+        color: var(--light);
+    }
+    
+    #portfolio ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+    
+    .portfolio-card {
+        height: auto;
+        width: auto;
+        min-height: 400px;
+        min-width: auto;
+        margin-block-end:3%;
+        padding: 20px;
+        background-color: var(--secondaryDark);
+    }
+
+
+  }
+  
 
 /* footer style */
 
