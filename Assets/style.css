@@ -40,7 +40,7 @@ header nav ul li {
     float: right;
 }
 
-/* Section styling */
+/* About Section styling */
 
 #about {
     padding: 5%;
@@ -52,7 +52,6 @@ header nav ul li {
 #about h2 {
     float: left;
     margin-right: 10%;
-
 }
 
 #about h2 p {
@@ -61,6 +60,7 @@ header nav ul li {
 }
 
 
+/* Portfolio Styling */
 
 #portfolio {
     padding: 10%;
@@ -68,7 +68,6 @@ header nav ul li {
 }
 
 #portfolio h2 {
-    float: left;
     margin: auto;
     margin-right: 2%;
     border: 5px;
@@ -88,8 +87,10 @@ header nav ul li {
 }
 
 .portfolio-card {
-    min-height: 100px;
-    min-width: 100px;
+    height: auto;
+    width: auto;
+    min-height: 200px;
+    min-width: 200px;
     margin: auto+2px;
     padding: 20px;
     background-color: var(--secondaryDark);
@@ -109,21 +110,17 @@ header nav ul li {
 
 /* footer style */
 
-footer {
-    padding: 80px;
-    font-family: 'Times New Roman', Times, serif;
+
+footer ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
     background-color: var(--dark);
     color: var(--highlight);
 }
 
-footer ul {
-    padding: 10px;
-    display: flex;
-    float: right;
-    font-size: 20px;
-    list-style-type: none;
-}
-
 footer ul li {
-    padding: 10px;
+    padding: 1%;
+    font-size: 20px;
 }
