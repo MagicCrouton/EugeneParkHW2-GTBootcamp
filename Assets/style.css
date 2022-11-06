@@ -2,94 +2,96 @@
 /* Overall Style */
 :root {
     --dark: darkslategrey;
+    --secondaryDark: navy; 
     --highlight: orange;
     --light: white;
 }
 /* Overall Style */
 
 
-/* Header Style */
-
+/* Header Styling */
 header {
-    padding: 40px;
+    padding: 80px;
+    font-family: 'Times New Roman', Times, serif;
     background-color: var(--dark);
     color: var(--highlight);
-    /* background-image: url('./Assets/Banner.png'); */
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 20px; */
 }
 
-.title {
+header h1 {
+    display: inline-block;
     float: left;
-    color: var(--highlight);
-    font-size: x-large;
+    font-size: 50px;
+    margin: auto;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+header nav {
     float: right;
-    justify-content: center;
 }
 
-.navbar li {
-    padding: 10px;
+header nav ul {
+    list-style-type: none;
 }
-/* Header Style */
+
+header nav ul li {
+    margin: auto;
+    color: var(--light);
+    padding: 10px;
+    display: inline-box;
+    float: right;
+}
+
+/* Section styling */
 
 #about {
-    margin: 2%;
-    display: flex;
-    color: var(--light);
-    background-color: var(--dark);
-    border: 20px;
+    padding: 5%;
+    margin: auto;
+    background-color: var(--secondaryDark);
+    color: var(--light)
 }
 
-#about p {
-    margin: auto;
-    height: 100px;
-    display: flex;
-    text-align: center;
-    color: var(--light);
-    background-color: var(--dark);
-    border: 20px;
+#about h2 {
+    float: left;
+    margin-right: 10%;
+
 }
+
+#about h2 p {
+    float: right;
+
+}
+
+
 
 #portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 10%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
-.portfolio-card {
-    min-height: 200px;
-    min-width: 200px;
-    margin: 1%;
-    border: 20pt;
+
+#portfolio h2 {
+    float: left;
+    margin-right: 5%;
+    border: 5px;  
     border-color: var(--highlight);
-    text-align: center;
-    color: var(--light);
     background-color: var(--dark);
+    color: var(--light);
 }
 
-/* Footer Style */
-
-/* why can't i get the row to show up on the right? */
-footer {
-    padding: 2%;
-    background-color: var(--dark);
-    color: var(--highlight);
-
-.footlist {
+#portfolio ul {
     display: flex;
-    flex-direction: row;
-    background-color: var(--dark);
-    color: var(--light);
-    width: 100%;
+    flex-wrap: wrap;
+    float: right;
+    margin-left: 5%;
+    list-style-type: none;
 }
 
-.footlist li {
-    padding: 10px;
+#portfolio .portfolio-card {
+    margin: auto+2px;
+    padding: 20px;
+    background-color: var(--secondaryDark);
 }
-/* Footer Style */
+
+.portfolio-card h3 {
+    margin: auto;
+    color: var(--light);
+}
