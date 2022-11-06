@@ -5,6 +5,8 @@
     --secondaryDark: navy; 
     --highlight: orange;
     --light: white;
+    --spaceBetween: .5%;
+    --headerSpacing: %;
 }
 
 
@@ -13,32 +15,59 @@
 
 /* Header Styling */
 header {
-    margin-bottom: .5%;
-    padding: 50px;
+    /* the commented code is to revert to simple banner
+
+    margin-bottom: var(--spaceBetween);
+    padding: 3%;
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--dark);
     color: var(--highlight);
-    justify-content: space-between;
+    justify-content: space-between;  */
+
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    padding-top: 40vh;
+    padding-left: 40%;
+    margin-bottom: var(--spaceBetween);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--dark);
+    /* color: var(--highlight); */
+    /* justify-content: space-evenly; */
+}
+
+.intro {
+    /* this moves the intro statement up and down
+    independent of the nav bar */
+    padding-top: 1.5vh;
 }
 
 header h1 {
-    /* display: inline-block; */
-    /* float: left; no longer necessary by justify content space between in parent*/
     font-size: 50px;
-    margin: auto;
+    color: var(--highlight);
+    margin-top: var(--headerSpacing);
+    margin-bottom: var(--headerSpacing);
 }
 
-/* no longer necessary by using justify-content: space between in parent */
-/* header nav {
-    float: right;
-} */
+header h2 {
+    color: var(--light);
+}
+
+nav {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0%;
+    padding-left: 200%;
+}
 
 header nav ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
 }
 
 header nav ul li {
-    margin: auto;
     color: var(--light);
     padding: 10px;
     float: right;
@@ -46,24 +75,39 @@ header nav ul li {
 
 /* makes sure the header stacks correctly below 700px */
 @media screen and (max-width: 700px) {
+    
     header {
         display: flex;
         flex-direction: column;
-        margin-bottom: .5%;
-        padding: 50px;
+        margin-bottom: var(--spaceBetween);
+        padding: 3%;
         font-family: 'Times New Roman', Times, serif;
         background-color: var(--dark);
         color: var(--highlight);
+        justify-content: space-between;
+    
     }
-
-    header h1 {
-        text-align: center;
-        font-size: 50px;
-        margin: auto;
+    
+    nav {
+        border-top: 0;
+        margin-top: 0;
+        padding-top: 0%;
+        padding-left: 0%;
+        justify-content: space-between;
     }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    
+    header nav ul li {
+        color: var(--light);
+        padding: 10px;
 }
 
-
+}
 
 /* About Section styling */
 
@@ -141,6 +185,7 @@ header nav ul li {
     width: auto;
     min-height: 400px;
     min-width: 400px;
+    margin: 3%;
     margin-block-end:3%;
     padding: 20px;
     background-color: var(--secondaryDark);
@@ -202,8 +247,6 @@ header nav ul li {
         padding: 20px;
         background-color: var(--secondaryDark);
     }
-
-
   }
   
 
