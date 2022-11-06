@@ -64,14 +64,16 @@ header nav ul li {
 
 #portfolio {
     padding: 10%;
-    margin: auto;
     font-family: 'Times New Roman', Times, serif;
 }
 
 #portfolio h2 {
     float: left;
-    margin-right: 5%;
-    border: 5px;  
+    margin: auto;
+    margin-right: 2%;
+    border: 5px;
+    min-height: 100px;
+    min-width: 100px;
     border-color: var(--highlight);
     background-color: var(--dark);
     color: var(--light);
@@ -85,13 +87,43 @@ header nav ul li {
     list-style-type: none;
 }
 
-#portfolio .portfolio-card {
+.portfolio-card {
+    min-height: 100px;
+    min-width: 100px;
     margin: auto+2px;
     padding: 20px;
     background-color: var(--secondaryDark);
 }
 
 .portfolio-card h3 {
+    justify-content: center;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.portfolio-card p {
+    justify-content: center;
     margin: auto;
     color: var(--light);
+}
+
+/* footer style */
+
+footer {
+    padding: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--dark);
+    color: var(--highlight);
+}
+
+footer ul {
+    padding: 10px;
+    display: flex;
+    float: right;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: 10px;
 }
