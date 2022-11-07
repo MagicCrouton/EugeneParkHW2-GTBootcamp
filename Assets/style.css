@@ -81,13 +81,16 @@ nav {
 
 header nav ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     list-style-type: none;
+    padding-bottom: 80pt;
 }
 
 header nav ul li {
     color: var(--light);
-    padding: 20px;
+    padding: 40pt;
     float: right;
 }
 
@@ -101,7 +104,6 @@ nav a {
 @media screen and (max-width: 700px) {
     /* centers header full screen for smaller screens */
     header {
-
         width: 100vw; 
         padding: 10pt;
         display: flex;
@@ -116,6 +118,27 @@ nav a {
     
     }
 
+    header h1 {
+        font-size: 25px;
+        color: var(--highlight);
+        margin-top: var(--headerSpacing);
+        margin-bottom: var(--headerSpacing);
+    }
+    
+    header h2 {
+        color: var(--light);
+        font-size: 12px;
+    }
+    
+    nav {
+        font-family: 'Ultra', serif;
+        font-size: 12px;
+        border-top: 0;
+        margin-top: 0;
+        padding-top: 0%;
+        padding-left: 0%;
+    }
+
     header div img {
         /* profile picture style */
         padding: 10px;
@@ -123,15 +146,14 @@ nav a {
     }
 
     .intro {
-        /* this moves the intro statement up and down
-        independent of the nav bar and pic*/
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        /* padding-top: 1.5vh; */
-        /* padding: 10pt; */
+            font-size: 10;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
     
     nav {
@@ -140,23 +162,6 @@ nav a {
         margin-top: 0;
         padding-top: 50%;
     }
-    
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        list-style-type: none;
-    }
-    
-    header nav ul li {
-        color: var(--light);
-        padding: 10px;
-}
-
-}
-
 
 
 /* About Section styling */
@@ -201,27 +206,34 @@ nav a {
 @media screen and (max-width: 700px) {
 
     #about {
+        font-size: 7px;
         display: flex;
         flex-direction: column;
-        margin-bottom: .5%;
         background-image: url("./Banner.png");
-        background-color: var(--secondaryDark);
-        color: var(--light);
     }
 
     #about h2 {
-        text-align: center;
-        padding: 10px;
-    }
-
-    .intro {
-        padding: 0;
-        margin: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        font-size: small;
+        text-align: center;
+        color: var(--highlight)
     }
+    
+    #about ul {
+        font-size: small;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        list-style: none;
+        padding: 1.5vh;
+    }
+    
+    /* #about ul li{
+        margin-left: 10px; 
+        margin-right: 10px;
+        color: var(--normal);
+    } */
 }
 
 /* end about section styling */
@@ -424,4 +436,26 @@ footer ul {
 footer ul li {
     padding: 1%;
     font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    footer ul {
+        font-family: 'Ultra', serif;
+        font-weight: lighter;
+        font-size: 5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        list-style-type: none;
+        background-image: url("./Banner.png");
+        color: var(--highlight);
+    }
+    
+    footer ul li {
+        padding: 1%;
+        font-size: 5px;
+    }
+    
 }
