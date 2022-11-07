@@ -139,6 +139,23 @@ nav a {
         padding-left: 0%;
     }
 
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+        padding-bottom: 80pt;
+    }
+    
+    header nav ul li {
+        color: var(--light);
+        padding: 10pt;
+        float: right;
+    }
+
     header div img {
         /* profile picture style */
         padding: 10px;
