@@ -152,8 +152,6 @@ header nav ul li {
 
 /* About Section styling */
 
-
-
 #about {
     display: flex;
     flex-wrap: wrap;
@@ -182,6 +180,7 @@ header nav ul li {
     margin-right: 10px;
 }
 
+
 /* makes sure the about me section displays in a centered collumn */
 @media screen and (max-width: 700px) {
 
@@ -208,6 +207,8 @@ header nav ul li {
         flex-direction: column;
     }
 }
+
+/* end about section styling */
 
 
 /* Portfolio Styling */
@@ -364,6 +365,7 @@ turn on border styles to see the groupings */
     #first-project {
         width: auto;
     }
+}
 /* footer style */
 
 
