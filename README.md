@@ -7,11 +7,11 @@ No projects have been completed yet so the links in the portfolio just lead back
 
 ## link to live site.
 
-https://magiccrouton.github.io/EugeneParkHW2-GTBootcamp/
+https://magiccrouton.github.io/EugeneParkPortfolio/
 
-## link to HW2 Repo
+## link to Portfolio Repo
 
-https://github.com/MagicCrouton/EugeneParkHW2-GTBootcamp.git
+https://github.com/MagicCrouton/EugeneParkPortfolio
 
 ## link to overall githup
 
